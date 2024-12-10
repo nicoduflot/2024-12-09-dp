@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'VinqueRg';
+    src: url('fonts/VinqueRg.eot');
+    src: url('fonts/VinqueRg.eot') format('embedded-opentype'),
+         url('fonts/VinqueRg.woff2') format('woff2'),
+         url('fonts/VinqueRg.woff') format('woff'),
+         url('fonts/VinqueRg.ttf') format('truetype'),
+         url('fonts/VinqueRg.svg#VinqueRg') format('svg');
+}
+
+h1, h2, h3, h4, h5, h6, .site-branding__name, .title page-title{
+  font-family: 'VinqueRg', 'Times New Roman', Times, serif;
+}
