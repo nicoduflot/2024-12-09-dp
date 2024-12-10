@@ -1,0 +1,65 @@
+Extentions essentielles : 
+	A activer dans le coeur
+		Media
+		Media Library
+	A télécharger
+		Admin toolbar
+		Token
+		Pathauto
+		Chaos tools
+
+Format texte et éditeur
+	Remplacer dans HTML simple et HTML Complet l'image par media drupal, 
+	cocher la case media intégré, 
+	choisir image et vidéo intégré dans la liste de media possibles
+
+Types de contenu
+
+	Article
+		Créer motif pathauto contenu article
+		Taxonomie etiquette
+			Créer motif pathauto sur la taxonomie etiquette
+		Retirer le champ image dans le type de contenu article
+			Remplacer par un champ media, limité à 1 et seulement pour les images.
+		Créer une taxonomie Catégorie pour les articles.
+			Créer motif pathauto sur la taxonomie Catégories
+				Ajouter les termes de la taxonomie pour automatiser le pathauto.
+		Ajouter le champs Catégorie(s) dans le type de contenu article
+		
+	Page
+		Créer motif pathauto contenu page
+
+	Roman
+		Champ média limité aux images, une seule image
+		Créer le motif pathauto type de contenu Roman
+		Une fois que tous les contenus liés sont créés
+			Taxonomie Personnage lie contenu personnage
+			Taxonomie Peuple lie contenu peuple
+
+	Film
+		Réutilisation du Champ média limité aux images, une seule image
+		Ajout d'un champ média pour trailer et extrait, limité aux vidéo externes, illimité dans la quantité
+		Créer le motif pathauto type de contenu Film
+		Une fois que tous les contenus liés sont créés
+			Taxonomie Personnage lie contenu personnage
+			Taxonomie Peuple lie contenu peuple
+
+	Personnage
+		Champs media intitulé "Portrait" pour y mettre une interprétation graphique du personnage
+		Changement de l'intitulé du body en "Histoire"
+		Faire apparaître l'intitulé de "Portrait" et de "Histoire" à l'affichage visiteur
+		Les droits sur le type de contenu
+		Créer le motif pathauto type de contenu Personnage
+		Une fois que tous les contenus liés sont créés
+			Taxonomie Peuple lie contenu peuple
+			Taxonomie Roman lie contenu roman
+			Taxonomie Film lie contenu film
+
+	Peuple
+		Renommer body en "Histoire"
+		Ajouter champ media 1 image limitée
+		Créer le motif pathauto type de contenu Peuple
+		Une fois que tous les contenus liés sont créés
+			Taxonomie personnage lie contenu personnage
+			Taxonomie Roman lie contenu roman
+			Taxonomie Film lie contenu film
