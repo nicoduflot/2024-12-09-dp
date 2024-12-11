@@ -1,6 +1,8 @@
 <?php
 
-/**
- * @file
- * lotr theme file
- */
+function lotr_preprocess_block_montheme_branding(&$vars, $hook) {
+    $element = &$vars['element'];
+    if ($element['#field_name'] == 'field_page_paragraphs') {
+      $vars['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+    }
+  }
