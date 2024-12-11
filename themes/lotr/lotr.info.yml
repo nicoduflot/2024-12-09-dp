@@ -1,0 +1,36 @@
+# commentaire en yml
+# nom du thème, celui qui sera affiché dans l'admin dans la partie apparence, etc.
+name: lotr fansite theme
+# on indique le type de module
+# les thème sont des modules drupal, 
+# ils sont simplement placés dans une autre partie physique des fichier pour simplifier 
+# la maintenance, l'utilisation, etc
+type: theme
+# optionnel : la description, c'est à dire la description du thème
+description: 'Mon thème enfant base starterkit_theme pour un site sur l'&oelig;uvre de <b>Tolkien</b>'
+# La version minimale avec laquelle le thème pourra fonctionner
+core_version_requirement: ^9 || ^10 || ^11
+# thème parent, on indique LE NOM MACHINE du thème parent, qu'il soit dans le coeur ou dans les thème installés
+'base theme': staterkit_theme
+# Le logo par défaut du thème
+logo: 'images/one-ring-log-01.svg'
+# Déclaration des librairies, c'est à dire les fichiers qui serviront pour le style et l'interactivité du site
+# on décrira ensuite les librairies dans un fichier nommé
+# nomDuSite.libraries.yml
+# sur notre thème : lotr.libraries.yml
+libraries:
+  - lotr/general
+
+# déclaration des régions du thème
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  breadcrumb: 'Breadcrumb'
+  secondary_menu: 'Secondary menu'
+  highlighted: 'Highlighted'
+  custom_region: 'Custom Region'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: 'Footer'

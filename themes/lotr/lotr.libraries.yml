@@ -1,0 +1,15 @@
+# on est à la clef general, déclarée dans lotr.info.yml à la clef libraries
+general:
+  # pour simplifier la gestion des librairies css et js, il faut indiquer que ces fichiers seront chargés dans l'entête du document
+  header: true
+  # indiquer les ressource css
+  css:
+    #indiquer ensuite ces fichiers sont dans le theme
+    theme:
+      css/bootstrap.css: {media: screen}
+      css/style.css: {media: screen}
+      css/print.css: {media: print}
+  js:
+    theme:
+      js/bootstrap.bundle.js: {}
+      js/scripts.js: {}
