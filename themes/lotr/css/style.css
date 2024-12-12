@@ -1,5 +1,7 @@
 :root{
     font-size: 1.1rem;
+    --darkred: #a30f0f;
+
 }
 
 @font-face {
@@ -14,5 +16,83 @@
 
 h1, h2, h3, h4, h5, h6, .site-branding__name, .title .page-title, .site-name{
     font-family: 'VinqueRg', 'Times New Roman', Times, serif;
-    font-size: 4rem;
+}
+
+
+[role="navigation"] h2,
+[role="navigation"] h3,
+[role="navigation"] h4,
+[role="navigation"] h5,
+[role="navigation"] h6{
+    font-family: var(--bs-font-sans-serif);
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+
+.grid-region{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "content" 
+    "sidebar";
+}
+
+#content{
+    grid-area: content;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+ul.h-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 0;
   }
+  
+  ul.h-list > li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+.bg-darkred{
+    background-color: var(--darkred);
+}
+
+[data-cs-link="darkred"] a,
+[data-cs-link="darkred"] a:visited,
+.site-name a,
+.site-name a:visited{
+    color: white;
+}
+
+[data-cs-link="darkred"] a:hover,
+[data-cs-link="darkred"] a:focus,
+.site-name a:hover,
+.site-name a:focus
+{
+    color: #aaa;
+}
+
+@media(min-width: 992px){
+    .grid-region{
+        grid-template-columns: 1fr 250px;
+        grid-template-areas: 
+        "content sidebar";
+    }
+
+    #content{
+        padding-right: var(--bs-gutter-x);
+    }
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    float: unset;
+}

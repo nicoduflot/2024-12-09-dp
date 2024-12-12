@@ -31,6 +31,6 @@ regions:
   custom_region: 'Custom Region'
   help: 'Help'
   content: 'Content'
-  sidebar_first: 'Left sidebar'
   sidebar_second: 'Right sidebar'
   footer: 'Footer'
+  #sidebar_first: 'Left sidebar'

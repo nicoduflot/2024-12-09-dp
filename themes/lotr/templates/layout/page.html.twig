@@ -59,27 +59,27 @@
 
   <main role="main" class="container">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <div class="grid-region">
+      <div class="layout-content" id="content">
+        {{ page.content }}
+      </div>{# /.layout-content #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+      {# if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary" id="sidebar">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </div>
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo" class="bg-dark text-white py-3" data-bs-theme="dark">
+    <footer role="contentinfo" class="bg-darkred text-white py-3" data-bs-theme="dark">
       {{ page.footer }}
     </footer>
   {% endif %}

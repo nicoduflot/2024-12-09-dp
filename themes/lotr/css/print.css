@@ -1,0 +1,8 @@
+header[role="banner"],
+.region.region-primary-menu,
+.region.region-highlighted,
+.layout-sidebar-second,
+footer[role="contentinfo"],
+iframe{
+    display: none;
+}

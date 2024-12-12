@@ -16,12 +16,12 @@
   set classes = [
     'region',
     'region-' ~ region|clean_class,
-    'bg-darkred',
-    'text-white',
   ]
 %}
 {% if content %}
-  <div{{ attributes.addClass(classes) }} data-bs-theme="dark">
-    {{ content }}
-  </div>
+	<div{{attributes.addClass(classes)}}>
+		<div class="container">
+			{{ content }}
+		</div>
+	</div>
 {% endif %}
