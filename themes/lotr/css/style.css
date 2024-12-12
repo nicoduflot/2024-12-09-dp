@@ -1,17 +1,16 @@
+/* Import des css pour les polices de caractère */
+@import url('vinquerg.css');
+@import url('roboto.css');
+
 :root{
     font-size: 1.1rem;
     --darkred: #a30f0f;
-
+    --main-font: 'Roboto', var(--bs-font-sans-serif);
+    --bs-body-line-height: 1.8rem;
 }
 
-@font-face {
-    font-family: 'VinqueRg';
-    src: url('fonts/VinqueRg.eot');
-    src: url('fonts/VinqueRg.eot') format('embedded-opentype'),
-         url('fonts/VinqueRg.woff2') format('woff2'),
-         url('fonts/VinqueRg.woff') format('woff'),
-         url('fonts/VinqueRg.ttf') format('truetype'),
-         url('fonts/VinqueRg.svg#VinqueRg') format('svg');
+body{
+    font-family: var(--main-font);
 }
 
 h1, h2, h3, h4, h5, h6, .site-branding__name, .title .page-title, .site-name{
@@ -24,7 +23,7 @@ h1, h2, h3, h4, h5, h6, .site-branding__name, .title .page-title, .site-name{
 [role="navigation"] h4,
 [role="navigation"] h5,
 [role="navigation"] h6{
-    font-family: var(--bs-font-sans-serif);
+    font-family: var(--main-font);
 }
 
 a, a:visited{
@@ -79,6 +78,14 @@ ul.h-list {
 .site-name a:focus
 {
     color: #aaa;
+}
+
+#cs-account-menu ul.h-list > li{
+    padding-right: 0;
+}
+
+.placeholder a{
+    color: white;
 }
 
 @media(min-width: 992px){

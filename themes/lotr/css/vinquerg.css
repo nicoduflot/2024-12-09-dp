@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'VinqueRg';
+    src: url('fonts/VinqueRg.eot');
+    src: url('fonts/VinqueRg.eot') format('embedded-opentype'),
+         url('fonts/VinqueRg.woff2') format('woff2'),
+         url('fonts/VinqueRg.woff') format('woff'),
+         url('fonts/VinqueRg.ttf') format('truetype'),
+         url('fonts/VinqueRg.svg#VinqueRg') format('svg');
+}

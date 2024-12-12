@@ -24,14 +24,14 @@
 				</div>
 			{% endif %}
 			{% if site_name %}
-				<div class="col">
-					<div class="site-name h1 text-end">
+				<div class="col d-flex flex-column align-items-end justify-content-center">
+					<div class="site-name h1">
 						<a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
 					</div>
+					{% if site_slogan %}
+						<div class="site-slogan">{{ site_slogan }}</div>
+					{% endif %}
 				</div>
-			{% endif %}
-			{% if site_slogan %}
-				<div class="site-slogan">{{ site_slogan }}</div>
 			{% endif %}
 		</div>
 	</div>
