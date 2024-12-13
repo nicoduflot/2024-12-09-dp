@@ -61,6 +61,11 @@ ul.h-list {
     padding-right: 1rem;
   }
 
+.leather-bg{
+    background: url('../images/large_leather.webp'), var(--darkred);
+    background-blend-mode:multiply;
+}
+
 .bg-darkred{
     background-color: var(--darkred);
 }
@@ -86,6 +91,11 @@ ul.h-list {
 
 .placeholder a{
     color: white;
+}
+
+#images-produit img{
+    max-width: 100%;
+    height: auto;
 }
 
 @media(min-width: 992px){

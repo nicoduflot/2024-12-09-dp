@@ -44,12 +44,12 @@
 #}
 <div>
 
-  <header role="banner">
+  <header role="banner" class="leather-bg">
     {{ page.header }}
-  </header>
-
   {{ page.primary_menu }}
   {{ page.secondary_menu }}
+  </header>
+
 
   {{ page.breadcrumb }}
 
@@ -79,7 +79,7 @@
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo" class="bg-darkred text-white py-3" data-bs-theme="dark">
+    <footer role="contentinfo" class="leather-bg text-white py-3" data-bs-theme="dark">
       {{ page.footer }}
     </footer>
   {% endif %}
